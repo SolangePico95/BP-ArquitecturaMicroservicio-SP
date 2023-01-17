@@ -5,6 +5,11 @@ import java.util.List;
 import com.solangepico.microservicio.Entity.Cuenta;
 import com.solangepico.microservicio.Entity.Transaccion;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023 
+ * Clase que implementa los metodos de logica de la interface de CuentaService.
+ */
 public interface ICuentaService {
 	Cuenta buscarCuenta(String identificacionPersona);
 

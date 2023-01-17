@@ -11,6 +11,11 @@ import com.solangepico.microservicio.Entity.Cliente;
 import com.solangepico.microservicio.Entity.Persona;
 import com.solangepico.microservicio.Repository.ClienteRepository;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023
+ * Interface que contiene los metodos de logica de negocio para cliente.
+ */
 @Service
 public class ClienteService implements IClienteService {
 

@@ -20,7 +20,7 @@ import com.solangepico.microservicio.Service.ClienteService;
 
 /**
  * @author SolangePico
- * @version 1.0.0 14/01/2023 Controlador que manipula el flujo de los servicios
+ * @version 1.0.0 16/01/2023 Controlador que manipula el flujo de los servicios
  *          rest del microservicio de clientes.
  */
 @RestController

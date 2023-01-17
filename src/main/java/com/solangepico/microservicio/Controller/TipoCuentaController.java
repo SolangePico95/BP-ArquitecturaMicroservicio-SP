@@ -19,6 +19,12 @@ import com.solangepico.microservicio.Entity.Persona;
 import com.solangepico.microservicio.Entity.TipoCuenta;
 import com.solangepico.microservicio.Service.TipoCuentaService;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023 
+ * Controlador que manipula el flujo de los servicios
+ *          rest del microservicio de tipocuenta.
+ */
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.PUT,RequestMethod.POST,RequestMethod.DELETE})
 @RequestMapping("api")

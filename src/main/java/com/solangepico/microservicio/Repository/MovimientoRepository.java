@@ -8,6 +8,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.solangepico.microservicio.Entity.Movimiento;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023
+ * Interface que contiene el CRUD con Spring JPA para la tabla de movimiento.
+ */
 public interface MovimientoRepository extends JpaRepository<Movimiento, Long> {
 	
 	@Query(value = "Select * FROM Movimiento m "

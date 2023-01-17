@@ -18,6 +18,12 @@ import com.solangepico.microservicio.Entity.EstadoCuentaMovimiento;
 import com.solangepico.microservicio.Entity.Transaccion;
 import com.solangepico.microservicio.Service.MovimientoService;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023 
+ * Controlador que manipula el flujo de los servicios
+ *          rest del microservicio de movimiento.
+ */
 @RestController
 @CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.PUT, RequestMethod.POST,
 		RequestMethod.DELETE })

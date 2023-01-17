@@ -11,6 +11,11 @@ import com.solangepico.microservicio.Entity.Cuenta;
 import com.solangepico.microservicio.Entity.Transaccion;
 import com.solangepico.microservicio.Repository.CuentaRepository;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023
+ * Interface que contiene los metodos de logica de negocio para cuenta.
+ */
 @Service
 public class CuentaService implements ICuentaService {
 

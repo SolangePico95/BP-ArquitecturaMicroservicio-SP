@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.solangepico.microservicio.Entity.Cliente;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023 
+ * Clase que implementa los metodos de logica de la interface de ClienteService.
+ */
 public interface IClienteService {
 	List<Cliente> listarClientes();
 

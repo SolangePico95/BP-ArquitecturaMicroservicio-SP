@@ -9,6 +9,11 @@ import com.solangepico.microservicio.Entity.Cuenta;
 
 import net.bytebuddy.implementation.bytecode.constant.IntegerConstant;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023
+ * Interface que contiene el CRUD con Spring JPA para la tabla de cuenta.
+ */
 public interface CuentaRepository extends JpaRepository<Cuenta, Long> {
 	
 	@Query(value = "Select * FROM cuenta c "

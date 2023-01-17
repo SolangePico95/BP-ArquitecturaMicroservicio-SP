@@ -20,8 +20,9 @@ import com.solangepico.microservicio.Service.PersonaService;
 
 /**
  * @author SolangePico
- * @version 1.0.0 14/01/2023 Controlador que manipula el flujo de los servicios
- *          rest del microservicio de personas.
+ * @version 1.0.0 16/01/2023 
+ * Controlador que manipula el flujo de los servicios
+ *          rest del microservicio de persona.
  */
 @RestController
 @CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.PUT, RequestMethod.POST,

@@ -10,6 +10,11 @@ import org.springframework.stereotype.Service;
 import com.solangepico.microservicio.Entity.Persona;
 import com.solangepico.microservicio.Repository.PersonaRepository;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023
+ * Interface que contiene los metodos de logica de negocio para persona.
+ */
 @Service
 public class PersonaService implements IPersonaService {
 

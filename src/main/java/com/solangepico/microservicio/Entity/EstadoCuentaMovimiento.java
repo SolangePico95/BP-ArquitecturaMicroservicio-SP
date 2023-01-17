@@ -2,6 +2,10 @@ package com.solangepico.microservicio.Entity;
 
 import java.util.Date;
 
+/**
+ * @author SolangePico
+ * @version 1.0.0 16/01/2023 Clase que representa la consulta del estado de cuenta de movimiento.
+ */
 public class EstadoCuentaMovimiento {
 	private String Cliente;
 	private Date Fecha;
