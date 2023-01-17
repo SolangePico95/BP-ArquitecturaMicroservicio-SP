@@ -1,10 +1,10 @@
-package com.banco.banco;
+package com.solangepico.microservicio;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BancoApplicationTests {
+class MicroservicioApplicationTests {
 
 	@Test
 	void contextLoads() {
