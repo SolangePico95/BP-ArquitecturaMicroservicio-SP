@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "144499d8-91dc-4cf3-96bf-05243b43121b",
+		"name": "Pruebas Microservicios Solange Pico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "listarPersonas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/persona/listarPersonas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"persona",
+								"listarPersonas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearPersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre_persona\": \"Paul McCartney\",\r\n        \"edad_persona\": 40,\r\n        \"identificacion_persona\": \"1726244039\",\r\n        \"genero_persona\": \"Masculino\",\r\n        \"telefono_persona\": \"0987654323\",\r\n        \"direccion_persona\": \"NewYork\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/persona/crearPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"persona",
+								"crearPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarPersona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"nombre_persona\": \"John Lennon Ono\",\r\n     \"edad_persona\": 42,\r\n     \"identificacion_persona\": \"1707122980\",        \r\n     \"direccion_persona\": \"New York\",\r\n     \"telefono_persona\": \"0999999999\",\r\n     \"genero_persona\": \"Masculino\"        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/persona/editarPersona/1707122980",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"persona",
+								"editarPersona",
+								"1707122980"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarPersona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/persona/eliminarPersona/1726244039",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"persona",
+								"eliminarPersona",
+								"1726244039"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "ListarClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cliente/listarClientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cliente",
+								"listarClientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contrasena_cliente\": \"1234\",\r\n    \"estado_cliente\": 1,\r\n    \"persona\":\r\n    {\r\n        \"nombre_persona\": \"John Lennon\",\r\n        \"edad_persona\": 40,\r\n        \"identificacion_persona\": \"1707122980\",\r\n        \"genero_persona\": \"Masculino\",\r\n        \"telefono_persona\": \"0987142849\",\r\n        \"direccion_persona\": \"Irlanda\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/cliente/crearCliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cliente",
+								"crearCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contrasena_cliente\": \"1234567890\",\r\n    \"estado_cliente\": 1,\r\n    \"persona\": \r\n    {\r\n        \"nombre_persona\": \"Paul McCartney\",\r\n        \"edad_persona\": 35,\r\n        \"identificacion_persona\": \"1726244039\",\r\n        \"genero_persona\": \"Masculino\",\r\n        \"direccion_persona\": \"Av 1234\",\r\n        \"telefono_persona\": \"0987654321\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/cliente/editarCliente/1726244039",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cliente",
+								"editarCliente",
+								"1726244039"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cliente/eliminarCliente/1726244039",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cliente",
+								"eliminarCliente",
+								"1726244039"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuenta",
+			"item": [
+				{
+					"name": "ListarCuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cuenta/listarCuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cuenta",
+								"listarCuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\": 1313131314,\r\n    \"tipo_cuenta\": \"2\",\r\n    \"saldo_inicial_cuenta\": 900,\r\n    \"estado_cuenta\": 1,\r\n    \"cliente\": \r\n    {\r\n        \"contrasena_cliente\": \"1234\",\r\n        \"estado_cliente\": 1,\r\n        \"id_persona\": 3,\r\n        \"persona\": \r\n        {\r\n            \"nombre_persona\": \"Paul Mccartney\",\r\n            \"edad_persona\": 35,\r\n            \"identificacion_persona\": \"1726244039\",\r\n            \"genero_persona\": \"Masculino\",\r\n            \"direccion_persona\": \"Av 1234\",\r\n            \"telefono_persona\": \"09999999999\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/cuenta/crearCuenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cuenta",
+								"crearCuenta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\": 1313131313,\r\n    \"tipo_cuenta\": \"1\",\r\n    \"saldo_inicial_cuenta\": 1500,\r\n    \"estado_cuenta\": 1,\r\n    \"cliente\": {\r\n        \"contrasena_cliente\": \"1234567890\",\r\n        \"estado_cliente\": 1,\r\n        \"id_persona\": 3,\r\n        \"persona\": \r\n        {\r\n            \"nombre_persona\": \"Paul McCartney\",\r\n            \"edad_persona\": 35,\r\n            \"identificacion_persona\": \"1726244039\",\r\n            \"genero_persona\": \"Masculino\",\r\n            \"dirreccion_persona\": \"Av 1234asb\",\r\n            \"telefono_persona\": \"09876789878\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/cuenta/editarCuenta/1726244039",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cuenta",
+								"editarCuenta",
+								"1726244039"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/cuenta/eliminarCuenta/1313131313",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"cuenta",
+								"eliminarCuenta",
+								"1313131313"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimiento",
+			"item": [
+				{
+					"name": "CrearMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\": \"1726244039\",\r\n\t\"contraseña\": \"1234567890\",\r\n\t\"numero_Cuenta\": 1313131314,\t\r\n\t\"tipoMovimiento\": \"debito\",\r\n\t\"monto\": 10,\r\n\t\"tipoCuenta\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/movimiento/crearMovimiento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"movimiento",
+								"crearMovimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarHistorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\": 1726244039,\r\n\t\"fecha_Desde\": \"2023-01-01\",\r\n\t\"fecha_Hasta\": \"2023-01-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/movimiento/historialMovimiento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"movimiento",
+								"historialMovimiento"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
