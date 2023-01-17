@@ -1,2 +1,2 @@
 # BP-ArquitecturaMicroservicio-SP
-Caso practico de Java
+Proyecto desarrollado como prueba técnica que representa una arquitectura de microservicio con Spring Boot, JPA, MySQL.
