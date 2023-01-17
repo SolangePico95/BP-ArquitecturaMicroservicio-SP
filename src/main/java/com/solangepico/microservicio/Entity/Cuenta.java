@@ -48,8 +48,18 @@ public class Cuenta {
 
 	public Cuenta() {
 		super();
+	}	
+	
+	public Cuenta(long id_cliente, int numero_cuenta, String tipo_cuenta, double saldo_inicial_cuenta,
+			int estado_cuenta) {
+		super();
+		this.id_cliente = id_cliente;
+		this.numero_cuenta = numero_cuenta;
+		this.tipo_cuenta = tipo_cuenta;
+		this.saldo_inicial_cuenta = saldo_inicial_cuenta;
+		this.estado_cuenta = estado_cuenta;
 	}
-
+	
 	public long getId_cuenta() {
 		return id_cuenta;
 	}
