@@ -9,11 +9,11 @@
 		<version>2.6.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.banco</groupId>
-	<artifactId>banco</artifactId>
+	<groupId>com.solangepico</groupId>
+	<artifactId>microservicios</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>banco</name>
-	<description>Proyecto para Simular un Banco</description>
+	<description>Demo project for Spring Boot </description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
